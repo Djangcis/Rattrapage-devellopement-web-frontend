@@ -1,0 +1,8 @@
+<p style="color: aqua;">Application permettant de lister les parkings</p>
+<mat-card *ngFor="let parking of parkings" class="parking-card">
+    <span style="font-weight: bold;font-style: italic;"> Nom :{{parking.nom}} </span> <span style="float: right;" >{{parking.status}} </span>
+    <div> Nombre de place disponible :{{parking.nbPlacesDispo}}</div>
+    <div> Nombre de place Total :{{parking.nbPlacesTotal}}</div>
+
+    <div> Heure de mise à jour: {{parking.heureMaj}}</div>
+</mat-card>
